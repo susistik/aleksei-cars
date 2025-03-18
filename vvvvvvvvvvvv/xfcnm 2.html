@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон alekseй Cars</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 50px;
+        }
+        .car-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .car-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .car-item:hover {
+            transform: scale(1.05);
+        }
+        .car-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Автосалон alekseй Cars</h1>
+</header>
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#cars">Автомобили</a>
+    <a href="#catalog">Обратная связь</a>
+</nav>
+
+<div class="container" id="home">
+    <h1>Добро пожаловать в Автосалон alekseй Cars</h1>
+    <p>Мы предлагаем лучшие автомобили класса люкс, такие как Bugatti, Lamborghini и другие.</p>
+</div>
+
+<div class="container" id="cars">
+    <h2>Наши автомобили</h2>
+    <div class="car-list">
+        <div class="car-item">
+            <img src="1.jpeg" alt="Bugatti Chiron">
+            <h3>Bugatti Chiron</h3>
+            <p>Цена: $3,000,000</p>
+        </div>
+        <div class="car-item">
+            <img src="2.jpeg" alt="Lamborghini Aventador">
+            <h3>Lamborghini Aventador</h3>
+            <p>Цена: $500,000</p>
+        </div>
+        <div class="car-item">
+            <img src="3.jpeg" alt="Ferrari LaFerrari">
+            <h3>Ferrari LaFerrari</h3>
+            <p>Цена: $1,500,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="catalog">
+    <h1>Обратная связь</h1>
+    <a href="https://t.me/Chickenboll" target="_blank" class="tg-button">
+        По вопросам писать в Telegram
+    </a>
+    <p>Телефон: +7 9951313730</p>
+    <p>Email: av@7976440gmail.com</p>
+</div>
+
+<footer>
+    <p>2025 Автосалон alekseй Cars. Все права выдуманы.</p>
+</footer>
+
+</body>
+</html>
